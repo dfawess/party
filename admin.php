@@ -9,7 +9,7 @@ if(isset($_SESSION['admin_access'])){
 if($_SESSION['admin_access']=='gfaigfuoawgybfuwgyawugfy'){
 
 
-$crud = $app->layout->add('Crud');
+$crud = $app->layout->add('CRUD');
 $crud->setModel(new Friend($db));
 $crud->addQuickSearch(['surname','phone_number','name','age']);
 
