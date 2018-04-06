@@ -26,6 +26,6 @@ class App extends \atk4\ui\App {
             $this->layout->leftMenu->addItem(['Admin', 'icon'=>'users'], ['admin']);
             $this->layout->leftMenu->addItem(['User', 'icon'=>'unordered list'], ['user']);
         }
-            $this->db = \atk4\data\Persistence::connect('mysql:host=127.0.0.1;dbname=party;charset=utf8', 'root', '');
+            $this->db = \atk4\data\Persistence::connect('mysql:host=eu-mm-auto-dub-01-b.cleardb.net;dbname=eu-mm-auto-dub-01-b.cleardb.net;charset=utf8', 'b3484af324fedb', '73d52b5043cbe42');
 }
 }
