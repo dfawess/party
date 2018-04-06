@@ -4,11 +4,11 @@ require 'vendor/autoload.php';
 if (isset($_ENV['CLEARDB_DATABASE_URL'])) {
      $db = \atk4\data\Persistence::connect($_ENV['CLEARDB_DATABASE_URL']);
  } else {
-     $db = \atk4\data\Persistence::connect('mysql:host=127.0.0.1;dbname=party;charset=utf8', 'root', '');
+     $db = \atk4\data\Persistence::connect('mysql:host=eu-mm-auto-dub-01-b.cleardb.net;dbname=eu-mm-auto-dub-01-b.cleardb.net;charset=utf8', 'b3484af324fedb', '73d52b5043cbe42');
  }
 
 class Friend extends \atk4\data\Model {
-    public $table = 'friends';
+    public $table = 'party-dfawess';
     function init() {
         parent::init();
         $this->addField('name',['caption'=>'Имя','required'=>TRUE]);
