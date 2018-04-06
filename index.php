@@ -51,6 +51,6 @@ $form->onSubmit(function ($form) use($app) {
 
 
 
-$crud = $app->layout->add('Crud');
+$crud = $app->layout->add('CRUD');
 $crud->setModel(new Friends($db));
 $crud->addQuickSearch(['surname']);
